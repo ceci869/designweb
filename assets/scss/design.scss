@@ -1,0 +1,16 @@
+/** Especificando as fonts */
+$font-titulo : "Raleway", sans-serif;
+$font-texto : "IBM Plex Mono", monospace;
+
+
+/** Especificando cores */
+$cor-bg-body: #F4F4F4;
+$cor-bg-button: #7400B8;
+$cor-text-title: #000000;
+$cor-text-body: #676767;
+$cor-border-button: #6930C3;
+
+
+body {
+    font: $font-texto;
+}
