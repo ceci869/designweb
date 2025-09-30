@@ -8,6 +8,7 @@ A melhor turma que design web já teve!
 
 ## Como a Turma Vai Trabalhar com Fork no GitHub
 
+
 Este é um guia simples para a turma colaborar no projeto usando GitHub.
 
 ---
