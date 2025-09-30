@@ -8,16 +8,16 @@ $font-peso-light: lighter;
 
 
 /** Especificando cores */
-$cor-bg-body: #F4F4F4;
-$cor-bg-button: #7400B8;
-$cor-text-title: #000000;
+$cor-bg-body: #080808;
+$cor-bg-button: #3F8E00;
+$cor-text-title: #FFFFFF;
 $cor-border-img: #1B1B1B;
-$cor-text-body: #676767;
-$cor-text-nav: #6930C3;
-$cor-border-button: #6930C3;
-$cor-bg-nav: #56CFE1;
+$cor-text-body: #9C9C9C;
+$cor-text-nav: #9C9C9C;
+$cor-border-button: #62BA1B;
+$cor-bg-nav: #1B1B1B;
 $cor-text-button: #FFFFFF;
-$cor-boxshadow-button: 0 5px 30px 0 rgba(105, 48, 195, 0.50);
+$cor-boxshadow-button: 0 5px 30px 0 #3F8E00;
 
 
 /** corpo */
@@ -49,12 +49,14 @@ h1 {
     font-family: $font-titulo;
     font-weight: $font-peso-titulo;
     font-size: 44px;
+    color: $cor-text-title;
 }
 
 h3 {
     font-family: $font-titulo;
     font-weight: $font-peso-light;
     font-size: 24px;
+    color: $cor-text-title;
 }
 
 p {
@@ -80,6 +82,10 @@ figure {
         border-radius: 900px;
         width: 350px;
     }
+}
+
+h5 {
+    color: $cor-text-title;
 }
 
 .job-list {
@@ -108,8 +114,6 @@ nav {
 }
 
 button:hover {
-    background-color: #000000;
-    box-shadow: 0 5px 30px 0 #1B1B1B;
     transform: scale(1.1);
     cursor: pointer;
    
@@ -118,7 +122,7 @@ button:hover {
 .job-list {
     img:hover {
         cursor: pointer;
-        border-color: #6930C3;
+        border-color: #62BA1B;
         transform: scale(1.1)
     }
 }
