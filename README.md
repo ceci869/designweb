@@ -3,7 +3,6 @@
 ---
 A melhor turma que design web já teve!
 
-
 =======
 
 ## Como a Turma Vai Trabalhar com Fork no GitHub
