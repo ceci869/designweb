@@ -41,14 +41,76 @@ $breakpoint-max: 667px;
 }
 
 @media (max-width: $breakpoint-max) {
+    /*header {
+        display: grid;
+        grid-template-areas:
+        "social   social    hamburger"
+        "nav      nav       nav";
+        .hamburger {
+        display: none;
+       }
+       .menu-hamburger {
+        grid-area: hamburger;
+        cursor: pointer;
+       }
+       .menu-navegacao {
+        grid-area: nav;
+       }
+
+    }*/
+
     nav {
        margin: 0;
        @include flex();
        @include row-reverse();
-       @include centralizar-itens();
-       width: 100dvh;
+       @include centralizar-conteudo();
+       width: 150px;
+       .menu-hamburger {
+        display: block;
+       }
        .menu-navegacao {
-       display: none;
+        display: none;
+       }
+       .menu-social {
+        gap: 15px;
+            .fa-brands {
+                font-size: 18px;
+            }     
        }
     }
+
+    .description {
+    @include flex();
+    @include column-reverse();
+        .left {
+            margin-left: 37px;
+            p {
+                width: 90%;
+            }
+            button {
+                width: 90%;
+                font-size: 16px;
+                text-wrap: nowrap;
+                justify-content: center;
+            }
+        }
+    }
+        figure {
+            @include flex();
+            justify-content: center;
+            img {
+                width: 300px;
+            }            
+        }
+    .last-jobs {
+        margin-top: 140px;
+        margin-left: 37px;
+        .job-list {
+            overflow: scroll;
+        }
+        .job-list::-webkit-scrollbar{
+            overflow: hidden;
+        }
+    }
 }
+
