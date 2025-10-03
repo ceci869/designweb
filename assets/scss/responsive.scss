@@ -3,6 +3,7 @@ $breakpoint-min: 668px;
 $breakpoint-max: 667px;
 
 $cor-text-nav: #9C9C9C;
+$font-texto : "IBM Plex Mono", monospace;
 
 /*displays*/
 @mixin flex {
@@ -52,22 +53,33 @@ $cor-text-nav: #9C9C9C;
        gap: 4px;
        width: 148px;
        .menu-hamburger {
-        display: inline-block;
+        @include flex();
         @include flex();
         @include row();
         align-items: center;
         gap: 14px;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
             .fa-solid {
                 font-size: 20px;
                 overflow: visible;
                 color: $cor-text-nav;
                 cursor: pointer;
+
             }
             p {
             font-size: 16px;
+            font-family: $font-texto;
             }
+        }
+
+        button.menu-hamburger:hover {
+            .fa-solid, p {
+                color: #F4F4F4;
+            }
+        }
        
-       }
        .menu-navegacao {
         display: none;
        }
@@ -119,6 +131,9 @@ $cor-text-nav: #9C9C9C;
             transform: scale(1.0)
             }
         }
+    } 
+
+    .offcanvas.active {
+        right: 10px;
     }
 }
-

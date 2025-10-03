@@ -26,6 +26,14 @@ body {
     background-color: $cor-bg-body;
 }
 
+.offcanvas {
+    background-color: $cor-bg-nav;
+    height: 150px;
+    width: 70%;
+    max-width: 450px;
+    border-radius: 6px;
+}
+
 /** navbar */
 nav {
     background-color: $cor-bg-nav;

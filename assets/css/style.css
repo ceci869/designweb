@@ -15,6 +15,19 @@ body {
   margin-right: auto;
 }
 
+.offcanvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 100px;
+  right: -450px;
+  gap: 10px;
+  text-align: justify;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+
 nav {
   margin-top: 10px;
   width: 1000px;
@@ -40,6 +53,7 @@ nav .menu-navegacao {
   display: flex;
   align-items: center;
   gap: 32px;
+  transition: 0.3s ease-in-out;
 }
 nav .menu-social {
   display: flex;
@@ -104,6 +118,14 @@ nav .menu-social .fa-brands {
 body {
   font-family: "IBM Plex Mono", monospace;
   background-color: #080808;
+}
+
+.offcanvas {
+  background-color: #1B1B1B;
+  height: 150px;
+  width: 70%;
+  max-width: 450px;
+  border-radius: 6px;
 }
 
 /** navbar */
@@ -207,11 +229,14 @@ button:hover {
     width: 148px;
   }
   nav .menu-hamburger {
-    display: inline-block;
+    display: flex;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 14px;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
   }
   nav .menu-hamburger .fa-solid {
     font-size: 20px;
@@ -221,6 +246,10 @@ button:hover {
   }
   nav .menu-hamburger p {
     font-size: 16px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  nav button.menu-hamburger:hover .fa-solid, nav button.menu-hamburger:hover p {
+    color: #F4F4F4;
   }
   nav .menu-navegacao {
     display: none;
@@ -269,6 +298,9 @@ button:hover {
     cursor: pointer;
     border-color: #62BA1B;
     transform: scale(1);
+  }
+  .offcanvas.active {
+    right: 10px;
   }
 }
 

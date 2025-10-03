@@ -41,6 +41,19 @@ body {
     @include centralizar-conteudo();
 }
 
+.offcanvas {
+    @include flex();
+    @include column();
+    justify-content: center;
+    position: fixed;
+    top: 100px;
+    right: -450px;
+    gap: 10px;
+    text-align: justify;
+    font-size: 18px;
+    transition: .3s ease-in-out;
+}
+
 nav {
     margin-top: 10px;
     width: 1000px;
@@ -59,6 +72,7 @@ nav {
         @include flex();
         @include centralizar-itens();
         gap: 32px;
+        transition: .3s ease-in-out;
     }
     .menu-social {
         @include flex();
