@@ -20,12 +20,17 @@ body {
   flex-direction: column;
   justify-content: center;
   position: fixed;
+<<<<<<< HEAD
   top: 100px;
   right: -800px;
+=======
+  top: 90px;
+  right: -480px;
+>>>>>>> 250f7495da584becad4fb574942e0bf371da732c
   gap: 10px;
   text-align: justify;
   font-size: 18px;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 nav {
