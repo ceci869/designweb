@@ -2,6 +2,8 @@
 $breakpoint-min: 668px;
 $breakpoint-max: 667px;
 
+$cor-text-nav: #9C9C9C;
+
 /*displays*/
 @mixin flex {
     display: flex;
@@ -41,38 +43,37 @@ $breakpoint-max: 667px;
 }
 
 @media (max-width: $breakpoint-max) {
-    /*header {
-        display: grid;
-        grid-template-areas:
-        "social   social    hamburger"
-        "nav      nav       nav";
-        .hamburger {
-        display: none;
-       }
-       .menu-hamburger {
-        grid-area: hamburger;
-        cursor: pointer;
-       }
-       .menu-navegacao {
-        grid-area: nav;
-       }
-
-    }*/
 
     nav {
        margin: 0;
        @include flex();
        @include row-reverse();
-       @include centralizar-conteudo();
-       width: 150px;
+       justify-content: center;
+       gap: 4px;
+       width: 148px;
        .menu-hamburger {
-        display: block;
+        display: inline-block;
+        @include flex();
+        @include row();
+        align-items: center;
+        gap: 14px;
+            .fa-solid {
+                font-size: 20px;
+                overflow: visible;
+                color: $cor-text-nav;
+                cursor: pointer;
+            }
+            p {
+            font-size: 16px;
+            }
+       
        }
        .menu-navegacao {
         display: none;
        }
        .menu-social {
         gap: 15px;
+        margin-left: -100px;
             .fa-brands {
                 font-size: 18px;
             }     
@@ -106,10 +107,17 @@ $breakpoint-max: 667px;
         margin-top: 140px;
         margin-left: 37px;
         .job-list {
-            overflow: scroll;
+            overflow-x: scroll;
         }
         .job-list::-webkit-scrollbar{
             overflow: hidden;
+        }
+        .job-list:hover {
+            img:hover {
+            cursor: pointer;
+            border-color: #62BA1B;
+            transform: scale(1.0)
+            }
         }
     }
 }

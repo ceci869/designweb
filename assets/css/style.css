@@ -25,11 +25,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-nav #hamburger {
-  position: absolute;
-  top: -100%;
-  left: -100%;
-}
 nav .menu-hamburger {
   display: none;
 }
@@ -113,7 +108,7 @@ body {
 
 /** navbar */
 nav {
-  background-color: #FFFFFF;
+  background-color: #1B1B1B;
   border-radius: 0px 0px 6px 6px;
 }
 nav ul {
@@ -203,40 +198,36 @@ button:hover {
 /*breakpoints*/
 /*displays*/
 @media (max-width: 667px) {
-  /*header {
-      display: grid;
-      grid-template-areas:
-      "social   social    hamburger"
-      "nav      nav       nav";
-      .hamburger {
-      display: none;
-     }
-     .menu-hamburger {
-      grid-area: hamburger;
-      cursor: pointer;
-     }
-     .menu-navegacao {
-      grid-area: nav;
-     }
-
-  }*/
   nav {
     margin: 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 150px;
+    gap: 4px;
+    width: 148px;
   }
   nav .menu-hamburger {
-    display: block;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+  nav .menu-hamburger .fa-solid {
+    font-size: 20px;
+    overflow: visible;
+    color: #9C9C9C;
+    cursor: pointer;
+  }
+  nav .menu-hamburger p {
+    font-size: 16px;
   }
   nav .menu-navegacao {
     display: none;
   }
   nav .menu-social {
     gap: 15px;
+    margin-left: -100px;
   }
   nav .menu-social .fa-brands {
     font-size: 18px;
@@ -269,10 +260,15 @@ button:hover {
     margin-left: 37px;
   }
   .last-jobs .job-list {
-    overflow: scroll;
+    overflow-x: scroll;
   }
   .last-jobs .job-list::-webkit-scrollbar {
     overflow: hidden;
+  }
+  .last-jobs .job-list:hover img:hover {
+    cursor: pointer;
+    border-color: #62BA1B;
+    transform: scale(1);
   }
 }
 

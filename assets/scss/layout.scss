@@ -47,11 +47,6 @@ nav {
     gap: 300px;
     @include flex();
     @include direcao-linha();
-    #hamburger {
-        position: absolute;
-        top: -100%;
-        left: -100%;
-    }
     .menu-hamburger {
         display: none;
     }
