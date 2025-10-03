@@ -192,4 +192,19 @@ button:hover {
   transform: scale(1.1);
 }
 
+/*breakpoints*/
+/*displays*/
+@media (max-width: 667px) {
+  nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100dvh;
+  }
+  nav .menu-navegacao {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
