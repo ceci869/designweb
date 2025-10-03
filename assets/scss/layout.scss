@@ -46,12 +46,12 @@ body {
     @include column();
     justify-content: center;
     position: fixed;
-    top: 100px;
-    right: -450px;
+    top: 90px;
+    right: -480px;
     gap: 10px;
     text-align: justify;
     font-size: 18px;
-    transition: .3s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 nav {
