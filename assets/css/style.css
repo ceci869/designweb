@@ -17,8 +17,8 @@ body {
 
 nav {
   margin-top: 10px;
-  width: 1500px;
-  gap: 380px;
+  width: 1000px;
+  gap: 300px;
   display: flex;
   flex-direction: row;
   padding: 12px 100px;
@@ -26,6 +26,7 @@ nav {
   align-items: center;
 }
 nav .menu {
+  text-wrap: nowrap;
   display: flex;
   flex-direction: row;
   padding: 12px 100px;
@@ -54,8 +55,6 @@ nav .menu-social .fa-brands {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 89px;
-  gap: 234px;
 }
 .container h3 {
   margin-top: -14px;
@@ -74,28 +73,22 @@ nav .menu-social .fa-brands {
   font-size: 14px;
   height: 12px;
 }
-.container figure img {
+
+.description {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
 .last-jobs {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-top: 0px;
-  gap: 0px;
-}
-.last-jobs h5 {
-  text-align: center;
-  margin-right: 904px;
 }
 .last-jobs .job-list {
   display: flex;
   flex-direction: row;
-  margin-left: -38px;
-  margin-top: -8px;
-  gap: 48px;
+  padding: 0;
+  gap: 63px;
 }
 .last-jobs .job-list img {
   padding: 18px 28px 18px 28px;

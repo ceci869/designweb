@@ -1,31 +1,30 @@
 /** Especificação de displyas*/
 @mixin direcao-linha {
-    display: flex;
     flex-direction: row;
     padding: 12px 100px;
     justify-content: center;
     align-items: center;
 }
 
-@mixin centralizar-itens {
+@mixin flex{
     display: flex;
+}
+
+@mixin centralizar-itens {
     align-items: center;
 }
 
 @mixin centralizar-conteudo {
-    display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-@mixin display-row {
-    display: flex;
+@mixin row {
     flex-direction: row;
 }
 
-@mixin display-column {
-    display: flex;
+@mixin column {
     flex-direction: column;
 }
 
@@ -38,22 +37,28 @@ body {
 
 /*header*/
 .header {
+    @include flex();
     @include centralizar-conteudo();
 }
 
 nav {
     margin-top: 10px;
-    width: 1500px;
-    gap: 380px;
+    width: 1000px;
+    gap: 300px;
+    @include flex();
     @include direcao-linha();
     .menu {
+        text-wrap: nowrap;
+        @include flex();
         @include direcao-linha();
     }
     .menu-navegacao {
+        @include flex();
         @include centralizar-itens();
         gap: 32px;
     }
     .menu-social {
+        @include flex();
         @include centralizar-itens();
         gap: 25px;
         .fa-brands {
@@ -72,9 +77,8 @@ $break-watch: 400px;
 
 .container {
     max-width: $break-desktop;
+    @include flex();
     @include centralizar-conteudo();
-    margin-top: 89px;
-    gap: 234px;
     h3 {
         margin-top: -14px;
     }
@@ -82,7 +86,7 @@ $break-watch: 400px;
             width: 541px;
         }
         button {
-            display: flex;
+            @include flex();
             align-items: center;
             padding: 18px 64px;
             gap: 8px;
@@ -92,28 +96,22 @@ $break-watch: 400px;
                 height: 12px;
             }
         }
-        figure {
-            img {
-                display: flex;
-                align-items: center;
-            }
-        }
+}
+
+.description {
+    @include flex();
+    justify-content: space-between;
+    margin-top: 60px;
 }
 
 .last-jobs {
-    @include display-column();
-    align-items: flex-start;
-    margin-top: 0px;
-    gap: 0px;
-    h5 {
-        text-align: center;
-        margin-right: 904px;
-    }
+    @include flex();
+    @include column();
     .job-list {
-    @include display-row();
-    margin-left: -38px;
-    margin-top: -8px;
-    gap: 48px;
+    @include flex();
+    @include row();
+    padding: 0;
+    gap: 63px;
     img {
         padding: 18px 28px 18px 28px;
         }
