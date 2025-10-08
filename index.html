@@ -6,16 +6,40 @@
     <title>Lista 2 - Hierarquia e Tipografia</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-gray-100 text-gray-500 max-w-lg mx-auto">
+<body class="bg-gray-100 text-gray-500">
 
-    <section class="text-justify leading-7 bg-violet-200 rounded-md shadow-md p-6 tracking-wide my-10">
+    <section class="text-justify leading-7 bg-violet-200 rounded-md shadow-md p-6 tracking-wide max-w-lg mx-auto my-10">
         <h1 class="text-violet-600  text-2xl font-bold">ALIEN STAGE</h1>
-        <h2 class="text-violet-500 text-lg font-[500] pt-2">Quem vai ganhar dessa vez?</h2>
+        <h2 class="text-violet-500 text-lg font-[500] mt-2">Quem vai ganhar dessa vez?</h2>
         
-        <p class="text-md text-justify pt-4">Alien Stage é uma série animada criada por Vivinos e QMeng. A obra gira em torno da história de 6 personagens principais que estão participando de uma competição cruel e mortal em um mundo onde a Terra não existe mais e a humanidade foi dominada por aliens. Nessa época de desespero e esquecimento do "Deus" que os humanos tanto acreditaram um dia, qual será o destino dos competidores?</p>
-        <p>Os personagens principais são: Luka, o ganhador da última competição | Hyuna, uma garota corajosa que se aliou a rebelião | Ivan, um dos humanos prediletos do público | Till, um grande artista rebelde | Mizi, uma menina alegre e brilhante | Sua, uma garota quieta com uma aura angelical.</p>
+        <p class="mt-4">Alien Stage é uma série animada criada por Vivinos e QMeng. A obra gira em torno da história de 6 personagens principais que estão participando de uma competição cruel e mortal em um mundo onde a Terra não existe mais e a humanidade foi dominada por aliens. Nessa época de desespero e esquecimento do "Deus" que os humanos tanto acreditaram um dia, qual será o destino dos competidores?</p>
+        <p class="mt-2">Os personagens principais são: Luka, o ganhador da última competição | Hyuna, uma garota corajosa que se aliou a rebelião | Ivan, um dos humanos prediletos do público | Till, um grande artista rebelde | Mizi, uma menina alegre e brilhante | Sua, uma garota quieta com uma aura angelical.</p>
 
     </section>
 
+    <!-- 
+        Cores: a paleta de cores, composta por diferenes tons de violeta, foi escolhida pensando no tema da section, pois o episódio que apresenta o show 'Alien Stage' acaba focando na personagem Sua (além de ser cantado com a voz dela), a qual é representada nos desenhos pela cor violeta.
+            Dessa maneira, o título possui o tom violeta mais escuro do documento e o subtítulo o segundo tom violeta mais escuro. Já o texto dos parágrafos, que são maiores, e portanto não podeme causar cansaço visual, possuem o tom padrão escolhido para toda a página no body (text-gray-100). O preto ficava muito destacado no tom violeta claro, por isso não foi escolhido.
+
+        Tamanhos:
+        - H1 -> o tamanho escolhido (2xl) foi posto pensando no destaque, já que ele é o título, então deve ser a primeira coisa que as pessoas verão, o '2' em si foi escolhido porque um tamanho menor parecia criar uma inconsistência visual na seciton. Por último, o leading-7 foi escolhido para que as linhas ficassem apenas um pouco menos próximas (parece que leading-6 é o padrão), melhorando a leitura, e o tracking-wide foi escolhido pois as letras ficam mais separadas, diminuindo as chances de o término de uma atrapalhar a visualização do início da outra.
+        - H2 -> o tamanho escolhido (lg) precisaria ficar em um "nível" de importância abaixo do título, já que é o subtítulo. Além disso, o xl também parecia criar uma inconsistência visual na section, ficando muito grande e ganhando muito destaque, algo que não era desejado.
+        - p -> o tamanho escolhido para os dois parágrafos é o padrão (text-md), portanto não precisa ser adicionado no código. Mais uma vez o nível precisava estar abaixo do título e subtítulo.
+
+        Espaçamentos:
+        - seciton -> para o eixo horizontal, foi utilizado o max-w-lg mx-auto para centralizar o conteúdo da section. O p-6 foi escolhido para que o conteúdo não ficasse colado nas bordas, mas ao mesmo tempo não ficasse muito distante. Já para o eixo vertical, foi utilizado o my-10, para que a section não ficasse "grudada" na borda da página, causando inconsistência visual.
+        - H2 -> escolhido apenas para aumentar o espaçamento entre o subtítulo e o título, para eles não ficarem muito "colados" (causava um certo desconforto visual).
+        - 1º p -> escolhido, pois precisava ficar mais distante do h2 (também cusava desconforto visual, principalmente porque era a mudança do subtítulo para um texto maior).
+        - 2º p -> escolhido, pois sem o mt-2 ficava muito junto do primeiro parágrafo, podendo atrapalhar a leitura (pois dava aquela a sensação de que você iria ler a linha logo abaixo, mas por estarem tão juntas você confunde e lê a mesma linha de novo).
+
+        Estilos:
+        - H1 -> font-bold foi escolhido para dar um destaque ainda maior para o título, tentando garantir que essa vai ser a primeira coisa vista pelo leitor.
+        - H2 -> font-[500] foi escolhido para dar um destque menor que o H1, porém maior que o texto corrido.
+
+        Alinhamentos:
+        - section -> escolhido o text-justify, pois para ler é mais confortável.
+
+
+    -->
 </body>
 </html>
