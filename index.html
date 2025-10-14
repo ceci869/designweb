@@ -3,47 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista 4 - Componentização e Reutilização Visual</title>
+    <title>Portfólio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-stone-50 text-gray-500 max-w-[1200px] mx-auto grid justify-center text-justify my-5">
-    <section class="grid md:grid-cols-3 gap-6 md:w-350 mx-4">
+<body class="font-[IBM_Plex_Mono] bg-zinc-950 text-zinc-500">
 
-        <div class="bg-indigo-50 rounded-md text-justify p-6 hover:cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-transform duration-300  grid content-between">
-            <h1 class="font-bold text-2xl text-indigo-900">IVAN</h1>
-            <p class="text-base leading-7">Meu personagem favorito, para mim uma de suas características mais marcantes são os seus olhos, eles estão sempre tão vazios, o único momento em que isso muda é quando ele está com o Till. Ivan sente dificuldade em expressar seus sentimentos, por isso pode ser entendido como uma pessoa desagradável, mas no fundo ele também quer ser alguém amado por quem ele ama...</p>
-            <p class="text-base leading-7">Sua adoção foi realizada por Ushu, um alien bastante rico, como um presente para a esposa dele. Ushu uma vez disse que escolheu o Ivan por conta do olhar em seus olhos, não sei dizer se ele viu o mesmo vazio citado por mim logo acima e pensou que Ivan seria o competidor perfeito (sem emoções, logo não teria problema nenhum em ‘matar’ seus oponentes’).</p>
-            <p class="text-base leading-7">No fim, Ivan morreu se sacrificando pelo Till (no Round 6 os dois foram oponentes), embora o Till tenha pensado por muito tempo que ele apenas fez isso porque o odiava. A verdade é que ele nunca olhou diretamente para os olhos do Ivan, então nunca pôde ver o olhar de admiração e amor com o qual o garoto olhava para ele.</p>
-            <button class="mt-4 p-3 rounded-md bg-indigo-100 text-indigo-900 font-[500] hover:cursor-pointer hover:scale-105 duration-300 focus:ring-2">Saiba mais</button>
-        </div>
+    <header class="">
+        <nav class="bg-zinc-900 rounded-md">
+            <button class="">
+                <i class="fa-solid fa-bars"></i><p>Menu</p>
+            </button>
 
-        <div class="bg-indigo-50 rounded-md p-6 hover:cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 grid content-between">
-            <h1 class="font-bold text-2xl text-indigo-900">SHIN</h1>
-            <p class="text-base leading-7">Outro personagem que eu gosto bastante, embora seja bastante diferente do Ivan, sua personalidade é muito divertida, ele fica facilmente irritado, mas tem um bom coração. O Shin consegue ler mentes e por isso, quando pequeno, algumas pessoas se afastavam dele, o que o levou a fugir de onde "morava" e encontrar o Sr. Sakamoto, que cuidou dele como um pai/irmão mais velho durante uma parte de sua adolescência.</p>
-            <p class="text-base leading-7">Atualmente, o Shin vive com a família Sakamoto, aderindo à promessa de nunca mais matar ninguém (a quebra do acordo pode gerar sua expulsão da residência), e trabalha como um funcionário no mercadinho deles. No entanto, quando alguém ameaça as pessoas que ele ama, ele está disposto a usar da sua força e seu poder para conseguir derrotá-lo.</p>
-            <p class="text-base leading-7">No último episódio que eu estava assistindo, ele conseguiu passar no exame de admissão para a escola de assassinos, pois ele e o Sr. Sakamoto precisam conseguir documentos confidenciais do banco de dados do local para descobrir algo sobre o famoso assassino que apareceu nos últimos tempos, o Slur, ou Uzuki.</p>
-            <button class="mt-4 p-3 rounded-md bg-indigo-100 text-indigo-900 font-[500] hover:cursor-pointer hover:scale-105 duration-300 focus:ring-2">Saiba mais</button>
-        </div>
+            <!--<ul class="offcanvas">
+                <li><a href="#">Estudos de caso</a></li>
+                <li><a href="#">Trabalhos</a></li>
+                <li><a href="#">Entre em contato</a></li>
+            </ul>-->    
 
-        <div class="bg-indigo-50 rounded-md text-justify p-6 hover:cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 grid content-between">
-            <h1 class="font-bold text-2xl text-indigo-900">QUEEN</h1>
-            <p class="text-base leading-7">Uma das minhas super-heroínas prediletas em 'To be Hero X'. Ela sempre foi muito esforçada e tudo que fazia era para atingir o seu único objetivo de se tornar o herói Nº 1, admiro muito isso nela, além disso é uma boa pessoa, sempre respeitando os outros. Seus poderes giram em torno de regras, as quais ela pode criar para que seu oponentes as obedeçam, enquanto estiverem numa determinada área de alcance.</p>
-            <p class="text-base leading-7">Queen quase sempre está com seus dois amigos, Lucky Cyan e Small Johnnie, os três são muito fofos juntos, é muito divertido ver a Queen baixando a sua guarda para o filho do Small Johnnie, um bichinho que parece um gato, mas que possui um chifre no meio da sua cabeça, como um unicórnio, e que se transforma numa fera gigante quando está com raiva.</p>
-            <p class="text-base leading-7">Dizem os rumores do fandom que na segunda temporada da série os fãs poderão votar qual herói será o ‘X’ (o mais forte), e já estou decidida de que votarei nela, pois é uma coisa que ela deseja desde pequena e porque esse mundo precisa de uma representação feminina no 1º lugar do pódio!</p> 
-            <button class="mt-4 p-3 rounded-md bg-indigo-100 text-indigo-900 font-[500] hover:cursor-pointer hover:scale-105 duration-300 focus:ring-2">Saiba mais</button>
-        </div>
+            <ul class="">
+                <li><a href="#">Estudos de caso</a></li>
+                <li><a href="#">Trabalhos</a></li>
+                <li><a href="#">Entre em contato</a></li>
+            </ul>
+            <ul class="">
+                <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-behance"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    </section>
-        
-    
-    
-    
-        <!--
-            Tipo de componente:
+    <main>
 
-            Esses cards representariam blocos de conteúdo, pois eles fornecem informações relacionadas ao tema que o site abrange e são reutilizáveis. Por exemplo, se o meu site fosse um petshop, esses cards poderiam ser uma descrição de diferentes raças de animais; ou se meu site fosse para uma cafeteria, os cards poderiam estar descrevendo diferentes tipos de café (expresso, capuccino etc); ou então, se considerarmos o texto que coloquei nesta atividade, o site poderia estar falando sobre personagens de anime, fazendo total sentido a estrutura desses cards. 
+        <section class="">
+            <div class="">
+                <h1 class="text-white">Cecília Aine</h1>
+                <h3 class="text-white font-[200]">UX e Dev Front-end</h3>
+                <p>Sou um híbrido raro: Design Systems + Engenharia de Produto. Entrego de ponta a ponta — da descoberta à produção — com métricas de negócio na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design, Front, Back e Data. Sem teatrinho: shippo, meço, repito.</p>
+                <button class="bg-lime-700 text-white rounded-sm shadow-lg/40 shadow-lime-600">
+                    Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i>
+                </button>
+            </div>
 
-        -->
-            
+            <figure class="">
+                <img class="rounded-full w-350px" src="./img/perfil.jpg" alt="Foto da Cecília Aine">
+            </figure>
+        </section>
+
+        <section class="">
+            <h5 class="text-white">Trabalhou em:</h5>
+            <ul class="">
+                <li class="border-1 border-zinc-700 rounded-md transition-transform ease-in-out duration-250"><img class="w-120px h-26px" src="./img/img-job-1.svg" alt=""></li>
+                <li class="border-1 border-zinc-700 rounded-md transition-transform ease-in-out duration-250"><img class="w-120px h-26px" src="./img/img-job-2.svg" alt=""></li>
+                <li class="border-1 border-zinc-700 rounded-md transition-transform ease-in-out duration-250"><img class="w-120px h-26px" src="./img/img-job-3.svg" alt=""></li>
+                <li class="border-1 border-zinc-700 rounded-md transition-transform ease-in-out duration-250"><img class="w-120px h-26px" src="./img/img-job-4.svg" alt=""></li>
+                <li class="border-1 border-zinc-700 rounded-md transition-transform ease-in-out duration-250"><img class="w-120px h-26px" src="./img/img-job-5.svg" alt=""></li>
+            </ul>
+        </section>
+
+    </main>
 </body>
 </html>
