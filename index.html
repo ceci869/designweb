@@ -4,114 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Landingpage - Version 1.0</title>
+    <title>Dashboard - Version 1.0</title>
 </head>
-<body>
+<body class="font-[Sora]">
     
-    <header class="container max-w-7xl mx-auto flex justify-between pt-8 items-center">
+    <main class="container max-x-7xl pl-[40px] py-[40px]">
 
-        <figure>
-            <img src="img/logo-infowebeti.svg" alt="Logo de Infoweb by turma Infowebeti">
+        <figure class="">
+            <img src="img/banner.jpg" alt="Imagem propaganda">
         </figure>
 
-        <nav>
-            <menu class="flex gap-8 text-gray-500">
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#sobre">Sobre</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#professores">Professores</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#alunos">Alunos</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#projetos">Projetos</a></li>
-                <li><a class="hover:bg-sky-700 hover:text-white" href="#documentos">Documentos</a></li>
-            </menu>            
-        </nav>
+        <section class="my-[40px]">
 
-    </header>
+            <h2 class="font-bold text-xl">Compre pontos e distribua como quiser</h2>
+            <div class="mt-[24px] flex gap-x-[32px]">
 
-    <main class="container max-w-7xl mx-auto ">
+                <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs">
+                    <img src="img/design_de_app.jpg" alt="">
+                    <p class="text-sm text-stone-500 my-[16px]">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem</p>
+                    <strong class="flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                    <p class="text-sm text-stone-500">5 créditos por R$10.000,00</p>
+                </div>
 
-        <!-- hero -->
-        <section class="flex flex-col items-center text-center p-20 my-10 bg-gray-100 rounded-lg">
-            <h1 class="text-5xl max-w-140">Depois de muita espera, ela finalmente chegou!</h1>
-            <p class="my-10 max-w-140">O formulário para aquisição da camisa está oficialmente aberto! Com um design original e dois modelos únicos, você vai poder mostrar todo o seu orgulho de fazer parte dessa turma incrível!</p>
-            
-            <div class="flex justify-center gap-4 ">
-                <a href="#" class="bg-sky-700 text-white py-4 px-8 rounded-sm">Ser feliz agora</a>
-                <a href="#" class="bg-sky-700 text-white py-4 px-8 rounded-sm">Ficar triste</a>
+                <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs">
+                    <img src="img/sistemas_pdv.jpg" alt="">
+                    <p class="text-sm text-stone-500 my-[16px]">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.</p>
+                    <strong class="flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                    <p class="text-sm text-stone-500">21 créditos por R$120.000,00</p>
+                </div>
+
+                <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs">
+                    <img src="img/sites_wordpress.jpg" alt="">
+                    <p class="text-sm text-stone-500 my-[16px]">Descontos cumulativos para projetos em Wordpress para 2025.</p>
+                    <strong class="flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                    <p class="text-sm text-stone-500">21 créditos por R$12.000,00</p>
+                </div>
             </div>
 
         </section>
-
-        <!-- logos -->
-        <section>
-            <ul class="flex items-center justify-between">
-                <li><img src="img/logo1.jpg" alt=""></li>
-                <li><img src="img/logo2.jpg" alt=""></li>
-                <li><img src="img/logo3.jpg" alt=""></li>
-                <li><img src="img/logo4.jpg" alt=""></li>
-                <li><img src="img/logo5.jpg" alt=""></li>
-                <li><img src="img/logo6.jpg" alt=""></li>
-                <li><img src="img/logo7.jpg" alt=""></li>
-            </ul>
-        </section> 
-
-        <!-- destaques -->
-        <section class="flex gap-20 my-20 text-gray-500">
-
-            <div class="flex gap-4 items-baseline">
-                    <i class="fa-solid fa-chevron-right text-sm"></i>
-                
-                <div >
-                    <strong>Ela é bonita</strong>
-                    <p>Além de linda, ela é a mais top.</p>
-                </div>
-            </div>
-
-            <div class="flex gap-4 items-baseline">
-                    <i class="fa-solid fa-chevron-right text-sm"></i>
-        
-                <div >
-                    <strong>O azul destaque</strong>
-                    <p>O azul royal ficou para trás. Contemple o novo azul esmeralda.</p>
-                </div>
-            </div>
-
-            <div class="flex gap-4 items-baseline">
-                    <i class="fa-solid fa-chevron-right text-sm"></i>
-                
-                <div >
-                    <strong>Webeti</strong>
-                    <p>O nosso mascote é um gênio da informática.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- mockup da camiseta da turma -->
-        <figure><img src="img/mockup.png" class="w-full" alt="Imagem destaque da camisa Infowebeti"></figure>
-        <h2>Alunos que já compraram</h2>
-
-        <!-- métricas -->
-         <section class="grid grid-cols-3 gap-4 text-center my-10">
-
-            <div>
-                <h3 class="text-5xl">243+</h3>
-                <span>Alunos felizes</span>
-            </div>
-
-            <div>
-                <h3 class="text-5xl">38.3903+</h3>
-                <span>Alunos adquirindo</span>
-            </div>
-
-            <div>
-                <h3 class="text-5xl">154+</h3>
-                <span>Alunos tristes</span>
-            </div>
-
-         </section>
-
 
     </main>
+
+    <footer class="container max-w-full mt-auto border-t-1 py-[16px] flex justify-end pr-14">
+        <img src="img/logo.svg" alt="Logo da Agência Web">
+    </footer>
 
 </body>
 </html>
