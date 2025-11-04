@@ -10,7 +10,7 @@
 </head>
 <body class="font-[Sora]">
 
-    <header class="bg-stone-100 border-b-1 border-stone-300">
+    <header class="bg-stone-50 border-b-1 border-stone-300">
         <nav class="flex justify-between px-[32px] py-[16px] items-center">
             <img src="./img/logo-header.svg" alt="Logo da Agência Web" class="">
             <div class="flex gap-2">
@@ -26,66 +26,65 @@
     
     <main class="container max-x-7xl flex">
 
-        <aside class="border-r-1 w-[264px] h-220">
-            <h3>Canal do Cliente</h3>
-            <menu>
-                <ul>
-                    <li>
-                        <div>
-                            <img src="./img/loja-vetor.svg" alt="">
-                            <p>Loja de projetos</p>
+        <aside class="border-r-1 border-stone-300 max-w-sm flex flex-col px-8 pt-[32px] gap-8 text-nowrap z-10 bg-white">
+            <h3 class="text-2xl font-[600] text-stone-700">Canal do Cliente</h3>
+            <menu class="grid gap-y-12 text-stone-400">
+                    <li class="grid gap-4">
+                        <div class="flex gap-x-2 cursor-pointer">
+                            <img src="./img/loja-vetor.svg" alt="Ícone Loja de projetos" class="w-5">
+                            <p class="font-bold">Loja de projetos</p>
                         </div>
-                        <ul>
-                            <li>Dashboard</li>
-                            <li>Concluídos</li>
+                        <ul class="grid gap-4 pl-8">
+                            <li><a href="#" class="hover:text-sky-800 hover:font-bold">Dashboard</a></li>
+                            <li><a href="#" class="hover:text-sky-800 hover:font-bold">Concluídos</a></li>
                         </ul>
                     </li>
     
                     <li>
-                        <div>
-                            <img src="./img/gestao-vetor.svg" alt="">
+                        <div class="flex gap-x-2 cursor-pointer">
+                            <img src="./img/gestao-vetor.svg" alt="Ícone gestão de projetos" class="w-5">
                             <p>Gestão de projetos</p>
                         </div>
                     </li>
     
                     <li>
-                        <div>
-                            <img src="./img/campanhas-vetor.svg" alt="">
-                            <p>Gestão de projetos</p>
+                        <div class="flex gap-x-2 cursor-pointer">
+                            <img src="./img/campanhas-vetor.svg" alt="Ícone campanhas" class="w-5">
+                            <p>Campanhas</p>
                         </div>
                     </li>
-                </ul>
+
             </menu>
         </aside>
    
-        <section class="flex flex-col pl-[40px] py-[40px]">
+        <section class="flex flex-col ml-[40px] mt-[40px] max-h-9/10">
             <figure class="">
                 <img src="img/banner.jpg" alt="Imagem propaganda">
             </figure>
 
-            <section class="my-[40px] ">
+            <section class="my-[40px]">
 
                 <h2 class="font-bold text-xl">Compre pontos e distribua como quiser</h2>
-                <div class="mt-[24px] flex gap-x-[32px]">
+                <div class="mt-[24px] max-w-full grid grid-cols-3 gap-8">
 
-                    <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs grid grid-rows-2 transition delay-50 duration-350 ease-in-out hover:scale-112 cursor-pointer">
+                    <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs max-h-9/10  grid grid-rows-2 hover: cursor-pointer">
                         <img src="img/design_de_app.jpg" alt="Design de App">
                         <p class="text-sm text-stone-500 my-[16px]">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem</p>
-                        <strong class="flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                        <strong class="flex items-center justify-between mt-4">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
                         <p class="text-sm text-stone-500">5 créditos por R$10.000,00</p>
                     </div>
 
-                    <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs grid grid-rows-2 transition delay-50 duration-350 ease-in-out hover:scale-112 cursor-pointer">
+                    <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs max-h-9/10  grid grid-rows-2 hover: cursor-pointer">
                         <img src="img/sistemas_pdv.jpg" alt="Sistema PDV">
                         <p class="text-sm text-stone-500 my-[16px]">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade média com super desconto.</p>
-                        <strong class="flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                        <strong class="flex items-center justify-between mt-4">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
                         <p class="text-sm text-stone-500">21 créditos por R$120.000,00</p>   
                     </div>
 
-                    <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs grid grid-rows-2 transition delay-50 duration-350 ease-in-out hover:scale-112 cursor-pointer">
+                    <div class="border-1 border-stone-300 rounded-lg p-[24px] max-w-xs max-h-9/10 grid grid-rows-2 hover: cursor-pointer">
                         <img src="img/sites_wordpress.jpg" alt="Sites Wordpress">
                         <p class="text-sm text-stone-500 my-[16px]">Descontos cumulativos para projetos em Wordpress para 2025.</p>
-                        <strong class="flex items-center justify-between">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
+                        <strong class="flex items-center justify-between mt-4">Compre créditos <i class="fa-solid fa-chevron-right text-xs"></i></strong>
                         <p class="text-sm text-stone-500">21 créditos por R$12.000,00</p>
                     </div>
                 </div>
