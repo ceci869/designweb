@@ -24,9 +24,9 @@
     </header>
 
     
-    <main class="container max-x-7xl flex">
+    <main class="container max-x-7xl flex flex-1">
 
-        <aside class="border-r-1 border-stone-300 max-w-sm h-[92.8dvh] flex flex-col px-8 pt-[32px] gap-8 text-nowrap z-10 bg-white">
+        <aside class="border-r-1 border-stone-300  h-[110dvh] flex flex-col px-8 pt-[32px] gap-8 text-nowrap bg-white">
             <h3 class="text-2xl font-[600] text-stone-700">Canal do Cliente</h3>
             <menu class="grid gap-y-12 text-stone-400">
                     <li class="grid gap-4">
@@ -60,8 +60,10 @@
    
         <section class="flex flex-col ml-[40px] mt-[40px] max-h-9/10">
             
-            <div class="flex items-center gap-2 text-gray-700">
+            <div class="flex items-center gap-2 text-gray-700 text-sm">
 
+                <p class="text-red-400">Início</p>
+                <i class="fa-solid fa-chevron-right text-xs text-red-400"></i>
                 <a href="#" class="underline underline-offset-2">Loja de Projetos</a>
                 <i class="fa-solid fa-chevron-right text-xs"></i>
                 <a href="#" class="underline underline-offset-2">Comprar Créditos</a>
@@ -73,9 +75,9 @@
             <section class="my-[40px]">
 
                 <h2 class="font-bold text-2xl">Compra de pontos base</h2>
-                <hr class="mt-6 w-[80dvw] border-1 text-stone-200">
+                <!-- <hr class="mt-6 w-[80dvw] border-1 text-stone-200"> -->
 
-                <section class="mt-[24px] max-w-full grid grid-cols-2 gap-16">
+                <section class="mt-[24px] max-w-full grid grid-cols-2 gap-50 border-t-1 border-stone-200 pt-8">
 
                     <section class="bg-stone-50 rounded-lg p-[24px] w-[40dvw] h-[200px] space-y-4">
                         <h4 class="text-lg font-semibold">Limite mensal</h4>
@@ -112,7 +114,7 @@
                     </section>
                 </section>
 
-                <section class="bg-stone-50 p-[24px] mt-8 rounded-lg grid grid-cols-2 w-301">
+                <section class="bg-stone-50 p-[24px] mt-8 rounded-lg grid grid-cols-2 w-[1020px]">
                     <div class="flex flex-col w-[400px]">
                         <h4 class="text-lg font-semibold text-nowrap">Quantidade de créditos para compra</h4>
                         <div class="flex space-x-20 px-8 mt-8">
@@ -130,15 +132,24 @@
                 </section>
 
             </section>
+
+            <section>
+            <h4 class="text-lg font-semibold flex items-center gap-2 border-b-1 border-stone-200 pb-8">Mais informações sobre o produto <i class="fa-solid fa-chevron-down text-xs text-sky-800"></i></h4>
+            <p class="my-4 w-4xl"><strong>ATENÇÃO:</strong> A transferência dos pontos comprados para programas parceiros (Milhas) depende da elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir do menu Viagens - Programas Parceiros.</p>
+            </section>
+
         </section>  
         
-        <section>
-            
-        </section>
+
     </main>
 
-    <footer class="container max-w-full bg-white border-t-1 border-stone-200 py-[16px] flex justify-end pr-14 fixed bottom-0">
-        <img src="img/logo.svg" alt="Logo da Agência Web">
+    <footer class="container max-w-[81%] ml-67 bg-white border-t-1 border-l-1 border-stone-200 py-[24px] px-8 flex justify-between">
+        <button class="text-sky-800 text-center cursor-pointer">Voltar</button>
+
+        <div class="space-x-2 flex">
+            <button class="text-sky-800 text-center border-1 border-sky-800 rounded-lg py-2 px-6 cursor-pointer">Adicionar ao carrinho</button>
+            <button class="bg-sky-800 text-white py-2 px-10 rounded-lg flex items-center gap-2 cursor-pointer">Continuar <img src="./img/right-icon.svg" alt=""></button>
+        </div>
     </footer>
 
 </body>
