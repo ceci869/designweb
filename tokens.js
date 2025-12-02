@@ -2,7 +2,7 @@ tailwind.config = {
     theme: {
         extend: {
             fontFamily  : {
-                'sans'  : ['OpenSans', 'system-ui', 'sans-serif'],
+                'Open'  : ['OpenSans', 'system-ui', 'sans-serif'],
             },
             colors      : {
                 // text-ifrn-green
