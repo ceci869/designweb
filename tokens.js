@@ -2,7 +2,7 @@ tailwind.config = {
     theme: {
         extend: {
             fontFamily  : {
-                'Open'  : ['OpenSans', 'system-ui', 'sans-serif'],
+                'Montserrat'  : ['Montserrat', 'system-ui', 'sans-serif'],
             },
             colors      : {
                 // text-ifrn-green
