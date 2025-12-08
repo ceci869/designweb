@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="retro">
 <head>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -44,6 +44,31 @@
     </div>
 
   </div>
+
+  <!-- 1. O CÉREBRO (Estado Inicial) -->
+   <div x-data="{ texto: '' }" class="p-4 ring-2 ring-red-300 bg-base-100 rounded-md w-110 flex flex-col items-center shadow-md">
+
+    <!-- 2. A CONEXÃO (Input <-> Var) -->
+    <textarea x-model="texto" class="border-0 bg-base-200 w-100 h-24 rounded-md"></textarea>
+
+    <div class="mt-6 space-x-68">
+      <!-- 3. O FEEDBACK (Texto e Cor) -->
+       <span
+       x-text="texto.length + '/20'"
+       :class="texto.length > 20
+               ? 'text-red-600'
+               : 'text-gray-400'">
+      </span>
+
+      <!-- 4. O GUARDA (Bloqueio) -->
+      <button class="py-1 px-4 rounded-4xl bg-red-300 hover:bg-red-500 cursor-pointer"
+        :disabled="texto.length === 0 ||
+                   texto.length > 20">
+        Tweetar
+      </button>
+    </div>
+
+   </div>
 
 </body>
 </html>
