@@ -80,25 +80,45 @@
         </div>
 
         <!-- Outras seções (Projetos, Contato)... -->
+        <div class="flex flex-col gap-y-4 items-center">
+          <div class="card w-[35vw] bg-base-100 shadow-xl" x-show="tab === 'projetos'" x-data="{ modal: false }">
+              <div class="card-body">
+                  <h2 class="card-title">Projeto X</h2>
+                  <button @click="modal = true" class="btn btn-primary">Ver</button>
+              </div>
 
-        <div class="card bg-base-100 shadow-xl" x-show="tab === 'projetos'" x-data="{ modal: false }">
-            <div class="card-body">
-                <h2 class="card-title">Projeto X</h2>
-                <button @click="modal = true" class="btn btn-primary">Ver</button>
-            </div>
+              <!-- O MODAL -->
+              <div x-show="modal"
+                  class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
+                  x-transition.opacity>
 
-            <!-- O MODAL -->
-            <div x-show="modal"
-                class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
-                x-transition.opacity>
+                  <div @click.outside="modal = false"
+                      class="bg-base-100 p-8 rounded-lg">
+                      <h3>Detalhes...</h3>
+                      <button @click="modal = false" class="btn">X</button>
+                  </div>
+              </div>
+          </div> 
 
-                <div @click.outside="modal = false"
-                    class="bg-base-100 p-8 rounded-lg">
-                    <h3>Detalhes...</h3>
-                    <button @click="modal = false" class="btn">X</button>
-                </div>
-            </div>
-        </div> 
+          <div class="card w-[35vw] bg-base-100 shadow-xl" x-show="tab === 'projetos'" x-data="{ modal: false }">
+              <div class="card-body">
+                  <h2 class="card-title">Projeto Y</h2>
+                  <button @click="modal = true" class="btn btn-primary">Ver</button>
+              </div>
+
+              <div x-show="modal"
+                  class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
+                  x-transition.opacity>
+
+                  <div @click.outside="modal = false"
+                      class="bg-base-100 p-8 rounded-lg">
+                      <h3>Detalhes...</h3>
+                      <button @click="modal = false" class="btn">X</button>
+                  </div>
+              </div>
+          </div> 
+
+        </div>
 
         <!-- SOBRE (ACCORDION) -->
         <div x-show="tab === 'sobre'" x-transition x-data="{ ativo: 1}" class="space-y-2 mt-4">
