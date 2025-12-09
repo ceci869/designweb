@@ -123,16 +123,16 @@
 
         <!-- CONTATO (FORM) -->
         <div x-show="tab === 'contato'" x-transition
-             x-data="{ email: '', msg: '', enviado: false }" class="max-w-md mx-auto mt-8 bg-base-200 p-6 rounded-xl">
+             x-data="{ email: '', msg: '', enviado: false }" class="max-w-md mx-auto mt-8 bg-base-200 p-6 rounded-xl shadow-xl/20">
 
-            <div class="form-control">
+            <div class="form-control flex flex-col">
                 <label class="label">Email</label>
-                <input x-model="email" class="input input-bordered">
+                <input x-model="email" class="input input-bordered w-100">
             </div>
 
-            <div class="form-control mt-4">
+            <div class="form-control mt-4 flex flex-col">
                 <label class="label">Mensgem</label>
-                <textarea x-model="msg" class="textarea textarea-bordered"></textarea>
+                <textarea x-model="msg" class="textarea textarea-bordered w-100"></textarea>
             </div>
 
             <div class="mt-6">
@@ -145,7 +145,7 @@
               <span>Mensagem enviada com sucesso!</span>
             </div>
         </div>
-    </main>
 
+    </main>
 </body>
 </html>
