@@ -47,10 +47,10 @@
             </button>
 
             <button
-             @click="tab = 'contatos'"
+             @click="tab = 'contato'"
              class="btn btn-sm btn-ghost"
-             :class="{ 'btn-active': tab === 'contatos' }">
-             Contatos
+             :class="{ 'btn-active': tab === 'contato' }">
+             Contato
             </button>
 
             <!-- Dark Mode Toggle -->
@@ -103,7 +103,46 @@
         <!-- SOBRE (ACCORDION) -->
         <div x-show="tab === 'sobre'" x-transition x-data="{ ativo: 1}" class="space-y-2 mt-4">
             <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="acc" @click="ativo = 1" checked />
+              <div class="collapse-title text-xl font-medium">Como eu crio uma conta?</div>
+              <div class="collapse-content"><p>Clique no botão 'Sign Up' no canto superior direito e siga as instruções de cadastro.</p></div>
+            </div>
 
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="acc" @click="ativo = 1" checked />
+              <div class="collapse-title text-xl font-medium">Esqueci a minha senha. O que devo fazer?</div>
+              <div class="collapse-content"><p>Clique em 'Esqueci minha senha' na página de login e siga as instruções enviadas para o seu email.</p></div>
+            </div>
+
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="acc" @click="ativo = 1" checked />
+              <div class="collapse-title text-xl font-medium">Como atualizar a informação do meu perfil?</div>
+              <div class="collapse-content"><p>Vá para as configurações de 'Minha conta' e selecione 'Editar perfil' para realizar mudanças.</p></div>
+            </div>
+        </div>
+
+        <!-- CONTATO (FORM) -->
+        <div x-show="tab === 'contato'" x-transition
+             x-data="{ email: '', msg: '', enviado: false }" class="max-w-md mx-auto mt-8 bg-base-200 p-6 rounded-xl">
+
+            <div class="form-control">
+                <label class="label">Email</label>
+                <input x-model="email" class="input input-bordered">
+            </div>
+
+            <div class="form-control mt-4">
+                <label class="label">Mensgem</label>
+                <textarea x-model="msg" class="textarea textarea-bordered"></textarea>
+            </div>
+
+            <div class="mt-6">
+                <button @click="enviado = true; email=''; msg=''"
+                        :disabled="!email.includes('@') || msg.length < 5"
+                        class="btn btn-primary w-full">Enviar</button>
+            </div>
+
+            <div x-show="enviado" x-transition class="alert alert-success mt-4 shadow-lg">
+              <span>Mensagem enviada com sucesso!</span>
             </div>
         </div>
     </main>
