@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Exercício 18</title>
+</head>
+<body>
+    <div x-data="{ ler_mais: false}" class="flex flex-col items-center">
+        <p class="w-200 px-4 py-6 text-justify">Sunday is a young man with fair skin and golden eyes with navy pupils. He has smooth, shoulder-length silver hair with a fringe swept up to the left, and wings of a similar color behind his ears. The left wing is pierced with two gold stud earrings, and he has a golden halo with details resembling eyes behind his head, which represents his Halovian heritage.</p>
+        <p x-show="ler_mais" class="w-200 px-4 text-justify">Before his playable outfit, Sunday's design consisted of a white sleeveless coat, a light gray unbuttoned blazer, a black turtleneck with a golden ornament in the middle resembling an eye, and a navy colored, wing-like vest under his blazer. He also wore white gloves with golden, cross-shaped cut outs, as well as light gray pants and black loafers with gray outsoles. On his left he wore a golden ornament attached to a blue cape and tassel, and his coat and blazer were open from the back, exposing his vest.</p>
+
+        <button @click="ler_mais = !ler_mais"
+                x-text="ler_mais ? 'Ler menos' : 'Ler mais'"
+                class="mx-4 mt-4 px-4 border-2 border-purple-400 text-purple-900">
+        </button>
+
+    </div>
+</body>
+</html>
