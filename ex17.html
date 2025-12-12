@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Exercício 17</title>
+</head>
+<body>
+    <div x-data="{ modal: false}" class="flex flex-col items-center justify-center mt-4 gap-4">
+        <button @click="modal = !modal"
+                class="py-2 px-4 border-2 rounded-md">Abrir modal</button>
+
+        <div x-show="modal"
+             class="w-100 h-100 flex flex-col items-center py-4 px-15 text-left bg-black text-white rounded-md gap-4">
+             Modal
+             <button @click="modal = false" class="py-2 px-4 self-end mt-70 border-2 border-white rounded-md">Fechar</button>
+        </div>
+
+    </div>
+</body>
+</html>
