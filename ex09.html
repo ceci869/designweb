@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Exercício 9</title>
+</head>
+<body>
+    <div x-data="{ ligado: false }">
+        <button @click="ligado = !ligado"
+                x-text="ligado ? 'Desligar' : 'Ligar' ">
+        </button>
+    </div>
+</body>
+</html>
