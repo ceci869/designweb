@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Exercício 19</title>
+</head>
+<body>
+    <div x-data="{ cores: ['Verde', 'Amarelo', 'Vermelho'], index: 0,  
+         proxima_cor() { this.index = (this.index + 1) % this.cores.length } }">
+    
+        <button @click="proxima_cor()" class="w-20 p-2 border-2 border-purple-400 rounded-md mx-auto mt-4 flex justify-center">Mudar</button>
+        <p x-text="cores[index]" 
+           :class="{ 'text-green-500' : cores[index]==='Verde',
+                     'text-yellow-500' : cores[index]==='Amarelo',
+                     'text-red-500' : cores[index]==='Vermelho' }"
+           class="w-25 mx-auto text-center mt-4 border-2 rounded-md"></p>
+
+    </div>
+</body>
+</html>
