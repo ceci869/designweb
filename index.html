@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <title>Semana 12 -> x-model e x-for</title>
+</head>
+<body>
+    <div x-data="{ tags: ['HTML'], newTag: '' }" class="font-mono mt-10 ml-10 space-x-2">
+        <!-- push serve para inserir um item na lista -->
+        <input x-model="newTag" @keydown.enter="tags.push(newTag); newTag='' " class="rounded-sm bg-stone-100 border-stone-300">
+        <!-- lista os itens em uma lista de dados por manipulação -->
+        <template x-for="tag in tags">
+            <span class="badge rounded-xl bg-purple-100 border-purple-500 text-purple-500 font-semibold text-lg">
+                <span x-text="tag"></span>
+                <button @click="tags = tags.filter(t => t !== tag )">X</button>
+            </span>
+        </template>
+    </div>
+</body>
+</html>
